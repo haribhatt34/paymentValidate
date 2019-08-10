@@ -39,12 +39,12 @@ public class simulateController {
 	@Autowired
 	TransactionsRepo transactionsRepo;
 
-	@PostMapping(path = "/paymentValidate")
+	@PostMapping(path = "/paymentSimulator")
 	public String hit(@RequestBody MyModel model) {
 
 		Response res = new Response();
 
-		LOGGER.info("this is in bank simulator");
+		LOGGER.info("This is in bank simulator");
 		String merchantId = model.getMerchantId();
 		String cardNo = model.getCardNo();
 		String expiryDate = model.getExpiryDate();
