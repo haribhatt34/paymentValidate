@@ -39,7 +39,7 @@ public class simulateController {
 	@Autowired
 	TransactionsRepo transactionsRepo;
 
-	@PostMapping(path = "/paymentSimulator")
+	@PostMapping(path = "/paymentValidate")
 	public String hit(@RequestBody MyModel model) {
 
 		Response res = new Response();
